@@ -1,0 +1,70 @@
+.menuCard {
+    width: 100%;
+    max-width: 480px;
+    background: white;
+    border-radius: 18px;
+    padding: 36px 38px 40px;
+    box-shadow: 0 14px 36px rgba(31, 42, 55, 0.10);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuTitle {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: #5D6678;
+    margin-bottom: 30px;
+}
+
+.menuSecondary {
+    width: 100%;
+    height: 60px;
+
+    border-radius: 12px;
+    border: 1px solid #E1E5EC;
+
+    background: #F9FAFB;
+
+    font-size: 18px;
+    color: #4B5563;
+
+    cursor: pointer;
+}
+
+.menuSecondary:hover {
+    background: #F1F4F6;
+}
+
+.menuFooter {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #98A2B3;
+}
+
+.menuRow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.menuIcon {
+    color: #9AA4B2;
+    transition: color 0.2s ease;
+}
+
+.menuSecondary:hover .menuIcon {
+    color: #5FA8B2;
+}
+
+.uiButton:hover .menuIcon {
+    color: white;
+}
+.menuActions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}

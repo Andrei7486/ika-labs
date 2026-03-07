@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: linear-gradient(180deg, #EEF1F6 0%, #F6F8FB 100%);
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
