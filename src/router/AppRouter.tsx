@@ -1,19 +1,21 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {HashRouter, Routes, Route, Navigate} from "react-router-dom";
 import LoginPage from "../pages/LoginPage/LoginPage.tsx";
 import DashboardPage from "../pages/DashboardPage/DashboardPage.tsx";
 
 export default function AppRouter() {
     return (
-        <BrowserRouter>
+        <HashRouter>
 
             <Routes>
 
-                <Route path="/" element={<LoginPage />} />
+                <Route path="/" element={<Navigate to="/login" />} />
+
+                <Route path="/login" element={<LoginPage />} />
 
                 <Route path="/dashboard" element={<DashboardPage />} />
 
             </Routes>
 
-        </BrowserRouter>
+        </HashRouter>
     );
 }
