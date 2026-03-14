@@ -1,0 +1,10 @@
+.uiCard {
+    width: 100%;
+    background: var(--color-card-bg);
+
+    border-radius: var(--radius-card);
+
+    box-shadow: var(--shadow-card);
+
+    padding: 36px 38px 40px;
+}

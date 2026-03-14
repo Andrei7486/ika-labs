@@ -1,12 +1,13 @@
+import "../ui/Card/Card.css";
 import "./DashboardMenuCard.css";
 import Button from "../ui/Button/Button";
 import { Plus, Hourglass, Search, BarChart3 } from "lucide-react";
 
 export default function DashboardMenuCard() {
     return (
-        <section className="menuCard">
+        <section className="menuCard uiCard">
 
-            <h2 className="menuTitle">
+            <h2 className="uiSubtitle menuTitle">
                 Choose action
             </h2>
 

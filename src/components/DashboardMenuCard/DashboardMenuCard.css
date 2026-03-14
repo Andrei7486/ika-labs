@@ -1,10 +1,6 @@
 .menuCard {
     width: 100%;
     max-width: 480px;
-    background: white;
-    border-radius: 18px;
-    padding: 36px 38px 40px;
-    box-shadow: 0 14px 36px rgba(31, 42, 55, 0.10);
 
     display: flex;
     flex-direction: column;
@@ -24,9 +20,8 @@
     height: 60px;
 
     border-radius: 12px;
-    border: 1px solid #E1E5EC;
-
-    background: #F9FAFB;
+    border: 1px solid var(--color-border);
+    background: var(--color-secondary-bg);
 
     font-size: 18px;
     color: #4B5563;

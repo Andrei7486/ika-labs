@@ -18,7 +18,7 @@ export default function FormField({
                                   }: FormFieldProps) {
     return (
         <div className="formField">
-            <label className="formLabel">{label}</label>
+            <label className="formLabel uiLabel">{label}</label>
 
             <Input
                 type={type}

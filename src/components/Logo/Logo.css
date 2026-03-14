@@ -11,21 +11,23 @@
 
 .logoG,
 .logoB {
-    font-size: 48px;
+    font-size: 60px;
     font-family: Playfair Display, serif;
     font-weight: 600;
 }
 
-.logoG {
+/*.logoG {
     fill: #A7CDD4;
 }
 
 .logoB {
     fill: #7FAFB8;
-}
+}*/
+.logoG { fill: var(--color-primary-light); }
+.logoB { fill: var(--color-primary); }
 
 .logoSystem {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 5px;
     fill: #A7CDD4;
 }

@@ -2,6 +2,7 @@ import { useState } from "react";
 import Button from "../ui/Button/Button";
 import FormField from "../ui/FormField/FormField";
 import { useNavigate } from "react-router-dom";
+import "../ui/Card/Card.css";
 
 export default function LoginCard() {
 
@@ -22,8 +23,8 @@ export default function LoginCard() {
 
     return (
 
-        <section className="loginCard">
-
+        <section className="loginCard uiCard">
+            <h1 className="uiTitle loginTitle">Sign in</h1>
             <FormField
                 label="Username"
                 placeholder="Username"
@@ -44,6 +45,7 @@ export default function LoginCard() {
             </Button>
 
         </section>
+
 
     );
 

@@ -1,0 +1,101 @@
+:root {
+    --font-main: "Inter", sans-serif;
+
+    --color-bg-top: #EEF1F6;
+    --color-bg-bottom: #F6F8FB;
+
+    --color-primary: #5FA8B2;
+    --color-primary-light: #6CB3BC;
+
+    --color-text-main: #2F3A4A;
+    --color-text-secondary: #667085;
+    --color-text-muted: #98A2B3;
+
+    --color-border: #E1E5EC;
+    --color-divider: #E3E8EF;
+
+    --color-input-text: #344054;
+    --color-placeholder: #B1B8C6;
+
+    --color-card-bg: #FFFFFF;
+    --color-secondary-bg: #F9FAFB;
+    --color-secondary-hover: #F1F4F6;
+
+    --radius-main: 12px;
+    --radius-card: 18px;
+
+    --shadow-card: 0 14px 36px rgba(31, 42, 55, 0.10);
+    --shadow-button: 0 8px 20px rgba(95, 168, 178, 0.25);
+
+    --input-height: 64px;
+
+    --transition-fast: 0.2s ease;
+}
+
+/* TYPOGRAPHY */
+
+.uiTitle {
+    font-size: 32px;
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+.uiSubtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--color-text-main);
+}
+
+
+.uiText {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+}
+
+.uiSmall {
+    font-size: 13px;
+    color: var(--color-text-muted);
+}
+
+/* GLOBAL APP STYLE */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-main);
+
+    background: linear-gradient(
+            180deg,
+            var(--color-bg-top) 0%,
+            var(--color-bg-bottom) 100%
+    );
+
+    color: var(--color-text-main);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* =========================
+   TYPOGRAPHY ROLES
+========================= */
+
+.uiLabel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #344054;
+}
+
+.uiActionText {
+    font-size: 18px;
+    font-weight: 500;
+    color: #344054;
+}
+
+.uiMetaText {
+    font-size: 14px;
+    color: #98A2B3;
+}

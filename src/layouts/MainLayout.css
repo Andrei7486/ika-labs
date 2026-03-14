@@ -4,11 +4,11 @@
     padding: 28px 36px 12px;
 }
 
-.brand {
+/*.brand {
     display: flex;
     align-items: center;
     gap: 18px;
-}
+}*/
 
 .logo {
     font-size: 32px;
@@ -16,14 +16,14 @@
     color: #5FA8B2;
 }
 
-.brandText {
+/*.brandText {
     font-size: 24px;
     color: #586274;
-}
+}*/
 
 .divider {
     height: 1px;
-    background: #E3E8EF;
+    background: var(--color-divider);
 }
 
 .page {
@@ -33,4 +33,11 @@
     padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+    color: #8A94A6;
+    padding: 18px 20px 26px;
 }

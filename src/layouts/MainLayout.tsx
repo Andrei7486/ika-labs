@@ -16,6 +16,9 @@ export default function MainLayout({ children }: Props) {
             <div className="divider"></div>
 
             <main className="page">{children}</main>
+            <footer className="footer">
+                Version 1.0 • Designed for IKA Laboratories (2006) Ltd. by GB System
+            </footer>
         </>
     );
 }

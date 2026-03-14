@@ -20,9 +20,9 @@ export default function Logo() {
 
             </svg>
 
-            <div className="logoText">
-                for IKA Labs
-            </div>
+            {/*<div className="logoText">*/}
+            {/*    for IKA Labs*/}
+            {/*</div>*/}
 
         </div>
     );

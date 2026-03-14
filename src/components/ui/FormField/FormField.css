@@ -1,11 +1,10 @@
 .formField {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-bottom: 24px;
 }
 
 .formLabel {
     display: block;
-    font-size: 18px;
-    color: #1F2937;
-    font-weight: 600;
-    margin-bottom: 10px;
 }
