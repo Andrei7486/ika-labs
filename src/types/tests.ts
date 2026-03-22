@@ -11,7 +11,9 @@ export type TestName =
     | "Salt spray"
     | "Tensile - Turning"
     | "Tensile - Milling"
-    | "Humidity";
+    | "Humidity"
+    | "";
+
 
 export interface BaseTestData {
     type: TestName;

@@ -4,13 +4,13 @@ import "./NewWorkPage.css";
 import ActionField from "../../components/ui/ActionField/ActionField";
 import {useState} from "react";
 import ChemicalTest from "../../components/tests/ChemicalTest/ChemicalTest.tsx";
-import type {TestsDataState} from "../../types/tests";
+import type {TestName, TestsDataState} from "../../types/tests";
 import HardnessTest from "../../components/tests/HardnessTest/HardnessTest.tsx";
 
 
 export default function NewWorkPage() {
     const [view, setView] = useState("form");
-    const [activeTest, setActiveTest] = useState<string | null>(null);
+    const [activeTest, setActiveTest] = useState<TestName  | null>(null);
     const [testsData, setTestsData] = useState<TestsDataState>({});
 // Part Description state
     const [partDescriptionFilled, setPartDescriptionFilled] = useState(false);
@@ -28,7 +28,7 @@ export default function NewWorkPage() {
         Chemical: ChemicalTest,
         Hardness: HardnessTest
     };
-    const testsList = [
+    const testsList: TestName[] =  [
         "Chemical",
         "Impact",
         "Other Test",
@@ -38,7 +38,7 @@ export default function NewWorkPage() {
         "Hardness",  /*(HRC/HRB/HV10)*/
         "SEM",
         "",
-        "Microhardness (HV/HK)",
+        "Microhardness",
         "Conductivity",
         "Salt spray",
         "Tensile - Turning",
@@ -56,7 +56,7 @@ export default function NewWorkPage() {
         }));
     };
 
-    const getTestQty = (testName: string) => {
+    const getTestQty = (testName: TestName) => {
         return testsData[testName]?.qty;
     };
 
