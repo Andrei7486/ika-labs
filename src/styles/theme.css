@@ -99,3 +99,189 @@ body {
     font-size: 14px;
     color: #98A2B3;
 }
+
+/* ========================================
+   UI FORM GRID
+   Universal layout for forms
+   Used across all modules
+======================================== */
+
+.uiFormGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    width: 100%;
+}
+
+/* for rows that must take full width */
+.uiFormGridFull {
+    grid-column: 1 / -1;
+}
+
+/* two columns layout (for modules like Part Description) */
+.uiFormGridTwo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* mobile adaptation */
+@media (max-width: 900px) {
+
+    .uiFormGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .uiFormGridTwo {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* ========================================
+   UI MODULE HEADER
+   Used in all modal modules
+======================================== */
+
+.uiModuleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.uiModuleTitle {
+    font-size: 26px;
+    font-weight: 500;
+    color: #5D6678;
+}
+
+.uiModuleSubtitle {
+    font-size: 14px;
+    color: #98A2B3;
+    margin-top: 4px;
+}
+
+.uiModuleTitleBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.uiModuleClose {
+    font-size: 22px;
+    color: #98A2B3;
+    cursor: pointer;
+}
+
+.uiModuleClose:hover {
+    color: #667085;
+}
+
+/* ========================================
+   UI ACTION FIELD
+   Clickable module field (Part Description / Tests)
+======================================== */
+
+.uiActionField {
+
+    width: 100%;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #E1E5EC;
+    border-radius: 12px;
+
+    background: #F9FAFB;
+
+    font-size: 16px;
+    color: #667085;
+
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+}
+
+/* hover state */
+
+.uiActionField:hover {
+
+    border-color: #67AEB7;
+    background: #F2F7F8;
+
+}
+
+/* when module already filled */
+
+.uiActionFieldActive {
+
+    border: 1px solid #67AEB7;
+    color: #344054;
+    background: #F6FBFC;
+
+}
+
+/* icon + text layout */
+
+.uiActionFieldContent {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+/* ========================================
+   UI SELECT
+   Universal dropdown style
+======================================== */
+
+.uiSelect {
+
+    width: 100%;
+    height: 44px;
+
+    border: 1px solid #E1E5EC;
+    border-radius: 10px;
+
+    padding: 0 14px;
+
+    font-size: 15px;
+    color: #344054;
+
+    background: white;
+
+    outline: none;
+
+    transition: border 0.2s ease;
+
+}
+
+/* hover */
+
+.uiSelect:hover {
+
+    border-color: #C5CCD8;
+
+}
+
+/* focus */
+
+.uiSelect:focus {
+
+    border-color: #67AEB7;
+
+}
+
+.uiFormGrid label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+.required::after {
+    content: " *";
+    color: #E25A5A;
+}

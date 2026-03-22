@@ -2,8 +2,12 @@ import "../ui/Card/Card.css";
 import "./DashboardMenuCard.css";
 import Button from "../ui/Button/Button";
 import { Plus, Hourglass, Search, BarChart3 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
+
 
 export default function DashboardMenuCard() {
+    const navigate = useNavigate();
     return (
         <section className="menuCard uiCard">
 
@@ -13,7 +17,7 @@ export default function DashboardMenuCard() {
 
             <div className="menuActions">
 
-                <Button>
+                <Button onClick={() => navigate("/new-work")}>
           <span className="menuRow">
             <Plus size={20} className="menuIcon" />
             Create order

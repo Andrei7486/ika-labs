@@ -1,0 +1,210 @@
+.newWorkContainer {
+
+    display: flex;
+    justify-content: center;
+    /*margin-top: 5px;*/
+
+
+}
+
+.newWorkCard {
+
+    max-width: 820px;
+    margin: auto;
+
+}
+
+.formNote {
+
+    margin-top: 16px;
+    text-align: center;
+    font-size: 13px;
+    color: #8a8a8a;
+
+}
+
+.newWorkButtons {
+
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    margin-top: 28px;
+
+}
+
+.newWorkButtons .uiButton {
+    min-width: 220px;
+}
+
+.requiredStar {
+    color: #E25A5A;
+}
+.selectedTest {
+
+    font-size: 14px;
+
+    margin-top: 6px;
+
+    color: #4a4a4a;
+
+}
+
+.selectedTestsContainer{
+    display:flex;
+    gap:12px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.selectedTestChip{
+    background:#e9f4f5;
+    border:1px solid #5fa5ab;
+    padding:6px 12px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.editTestsButton{
+    margin-left:auto;
+}
+/*.testsList{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:12px;
+    margin-top:20px;
+}*/
+
+.testsModalCard {
+    max-width: 860px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.testsModalHeader {
+    padding: 28px 36px 12px;
+    margin-bottom: 0;
+}
+
+.testsModalTitleBlock {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.testsModalTitle {
+    margin: 0;
+    font-size: 34px;
+    font-weight: 500;
+    color: #5D6678;
+}
+
+.testsModalSubtitle {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #98A2B3;
+}
+
+.testsModalClose {
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    line-height: 1;
+    color: #A0A8B8;
+    cursor: pointer;
+    padding: 0;
+    margin-left: auto;
+}
+
+.testsModalClose:hover {
+    color: #667085;
+}
+
+.testsModalDivider {
+    height: 1px;
+    background: var(--color-divider);
+    width: 100%;
+}
+
+.testsModalGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 8px;
+    padding: 24px 18px 20px;
+}
+
+.testsModalItem {
+    min-height: 44px;
+    border: 1px solid #E1E5EC;
+    border-radius: 8px;
+    background: #F9FAFB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 12px;
+    font-size: 16px;
+    color: #667085;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: left;
+}
+
+.testsModalItem:hover {
+    border-color: #67AEB7;
+    background: #F2F7F8;
+}
+
+.testsModalItemLabel {
+    display: inline-flex;
+    align-items: center;
+    min-height: 100%;
+}
+
+.testsModalBadge {
+    min-width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    background: #67AEB7;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 6px;
+    margin-left: 10px;
+}
+
+.testsModalEmptyCell {
+    min-height: 44px;
+}
+
+.testsModalFooter {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 18px 18px 20px;
+    border-top: 1px solid var(--color-divider);
+}
+
+.testsFooterButton {
+    min-width: 120px;
+    height: 44px;
+}
+
+@media (max-width: 900px) {
+    .testsModalGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .testsModalHeader {
+        padding: 24px 20px 12px;
+    }
+
+    .testsModalFooter {
+        flex-direction: column;
+    }
+
+    .testsFooterButton {
+        width: 100%;
+    }
+}
