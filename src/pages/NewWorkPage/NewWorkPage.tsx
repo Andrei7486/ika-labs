@@ -6,6 +6,7 @@ import {useState} from "react";
 import ChemicalTest from "../../components/tests/ChemicalTest/ChemicalTest.tsx";
 import type {TestName, TestsDataState} from "../../types/tests";
 import HardnessTest from "../../components/tests/HardnessTest/HardnessTest.tsx";
+import ImpactTest from "../../components/tests/ImpactTest/ImpactTest.tsx";
 
 
 export default function NewWorkPage() {
@@ -26,7 +27,8 @@ export default function NewWorkPage() {
     >([]);*/
     const testComponents: Record<string, any> = {
         Chemical: ChemicalTest,
-        Hardness: HardnessTest
+        Hardness: HardnessTest,
+        Impact: ImpactTest
     };
     const testsList: TestName[] =  [
         "Chemical",
@@ -34,10 +36,10 @@ export default function NewWorkPage() {
         "Other Test",
         "Metallography",
         "Bend",
-        "",
+
         "Hardness",  /*(HRC/HRB/HV10)*/
         "SEM",
-        "",
+
         "Microhardness",
         "Conductivity",
         "Salt spray",

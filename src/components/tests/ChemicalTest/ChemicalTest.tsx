@@ -8,7 +8,7 @@ type Props = {
 };
 
 const ChemicalTest = ({ setView, onSave, initialData }: Props) => {
-    const [qty, setQty] = useState(initialData?.qty || 0);
+    const [qty, setQty] = useState(initialData?.qty || "");
     const [melting, setMelting] = useState(initialData?.melting || false);
     const [coatingRemoval, setCoatingRemoval] = useState(initialData?.coatingRemoval || false);
     const [location, setLocation] = useState(initialData?.location || "");

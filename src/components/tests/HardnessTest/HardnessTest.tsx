@@ -8,7 +8,7 @@ type Props = {
 };
 
 const HardnessTest = ({setView, onSave, initialData}: Props) => {
-    const [qty, setQty] = useState(initialData?.qty || 0);
+    const [qty, setQty] = useState(initialData?.qty || "");
     const [location, setLocation] = useState(initialData?.location || "");
     const [method, setMethod] = useState(initialData?.method || "");
     const [comments, setComments] = useState(initialData?.comments || "");
